@@ -10,7 +10,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
     public static void main(String[] args) {
         // TODO code application logic here
         char resp = 's';
-        ArrayList equipo=new ArrayList();
+        ArrayList<Persona> equipo=new ArrayList();
 
         while (resp == 's') {
             System.out.println("1) Crear equipo");
@@ -20,7 +20,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
             System.out.print("Eliga la opcion que desea: ");
 
             String nombrePer, apellido, colegioMed, ciudadNatal, jugadaFav;
-            int años, salario, numcamiseta, tiro3, defensa, tiroMedia, rebote, bandeja, pases, posteo, altura;
+            int años, salario, numcamiseta, tiro3, defensa, tiroMedia, rebote, bandeja, pases, posteo, altura=0;
             int cantCiru, cantEnf, cantTer, valorDueño;
             boolean Fue;
 
@@ -41,9 +41,10 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
 
                         System.out.print("Ingrese años como profesional: ");
                         años = lea.nextInt();
-
+                        
                         System.out.print("Ingrese el salario del jugador: ");
                         salario = lea.nextInt();
+                        
                         System.out.println("");
                         System.out.println("Puestos a asignar a la persona : ");
                         System.out.println("1) Jugador");
@@ -144,6 +145,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                                 }
                                 
                                 System.out.println("");
+                                equipo.add(new Jugador(numcamiseta, tiro3, defensa, tiroMedia, rebote, bandeja, pases, posteo, altura, nombrePer, apellido, años, salario));
                                 break;
 
                             case 2://CREAR DUEÑO

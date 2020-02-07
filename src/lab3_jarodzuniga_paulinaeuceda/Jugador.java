@@ -24,7 +24,7 @@ public class Jugador extends Persona{
     }
 
     public Jugador(int numero_camisa, int tiro3, int defensa, int tiromed, int rebote, int bandeja, int pases, int posteo, int altura,String nombre, String apellido,int  añospro, int salario) {
-        super(nombre, apellido, añospro, altura);
+        super(nombre, apellido, añospro, salario);
         this.numero_camisa = numero_camisa;
         this.tiro3 = tiro3;
         this.defensa = defensa;
@@ -110,7 +110,7 @@ public class Jugador extends Persona{
 
     @Override
     public String toString() {
-        return "Jugador{" + "numero_camisa=" + numero_camisa + ", tiro3=" + tiro3 + ", defensa=" + defensa + ", tiromed=" + tiromed + ", rebote=" + rebote + ", bandeja=" + bandeja + ", pases=" + pases + ", posteo=" + posteo + ", altura=" + altura + '}';
+        return "Jugador{"+"Nombre: "+super.nombre+"Apellido: " +super.apellido+"Años de profecional"+super.añospro+"Salario: "+super.salario+ "numero_camisa=" + numero_camisa + ", tiro3=" + tiro3 + ", defensa=" + defensa + ", tiromed=" + tiromed + ", rebote=" + rebote + ", bandeja=" + bandeja + ", pases=" + pases + ", posteo=" + posteo + ", altura=" + altura + '}';
     }
     
     
