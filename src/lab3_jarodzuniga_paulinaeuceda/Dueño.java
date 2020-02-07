@@ -10,5 +10,35 @@ package lab3_jarodzuniga_paulinaeuceda;
  * @author Rosa
  */
 public class Dueño {
+    private int ganancia;
+    private String ciudad_natal;
+
+    public Dueño() {
+    }
+
+    public Dueño(int ganancia) {
+        this.ganancia = ganancia;
+    }
+
+    public String getCiudad_natal() {
+        return ciudad_natal;
+    }
+
+    public void setCiudad_natal(String ciudad_natal) {
+        this.ciudad_natal = ciudad_natal;
+    }
+
+    public double getGanancia() {
+        return ganancia;
+    }
+
+    public void setGanancia(int ganancia) {
+        this.ganancia = ganancia;
+    }
+
+    @Override
+    public String toString() {
+        return "Due\u00f1o{" + "ganancia=" + ganancia + ", ciudad_natal=" + ciudad_natal + '}';
+    }
     
 }

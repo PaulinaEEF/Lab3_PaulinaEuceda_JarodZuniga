@@ -10,5 +10,22 @@ package lab3_jarodzuniga_paulinaeuceda;
  * @author Rosa
  */
 public class Asistente {
+    private int salario=1000000;
+
+    public Asistente() {
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Asistente{" + "salario=" + salario + '}';
+    }
     
 }
