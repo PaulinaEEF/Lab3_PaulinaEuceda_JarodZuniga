@@ -55,16 +55,105 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
 
                         System.out.println("");
                         switch (op) {
-                            case 1:
+                            case 1://crear jugador
+                                System.out.print("Ingrese el numero de camiseta: ");
+                                numcamiseta = lea.nextInt();
+
+                                System.out.print("Ingrese el tiro de 3: ");
+                                tiro3 = lea.nextInt();
+                                while (tiro3 >= 99 || tiro3 < 0) {
+                                    System.out.print("Debe ser menor a 99. Ingrese otra vez: ");
+                                    tiro3 = lea.nextInt();
+                                }
+
+                                System.out.print("Ingrese la defensa: ");
+                                defensa = lea.nextInt();
+                                while (defensa >= 99 || defensa < 0) {
+                                    System.out.print("Debe ser menor a 99. Ingrese otra vez: ");
+                                    defensa = lea.nextInt();
+                                }
+
+                                System.out.print("Ingrese el tiro de media: ");
+                                tiroMedia = lea.nextInt();
+                                while (tiroMedia >= 99 || tiroMedia < 0) {
+                                    System.out.print("Debe ser menor a 99 y mayor a 0. Ingrese otra vez: ");
+                                    tiroMedia = lea.nextInt();
+                                }
+
+                                System.out.print("Ingrese el rebote: ");
+                                rebote = lea.nextInt();
+                                while (rebote >= 99 || rebote < 0) {
+                                    System.out.print("Debe ser menor a 99 y mayor a 0. Ingrese otra vez: ");
+                                    rebote = lea.nextInt();
+                                }
+
+                                System.out.print("Ingrese la bandeja: ");
+                                bandeja = lea.nextInt();
+                                while (bandeja >= 99 || bandeja < 0) {
+                                    System.out.print("Debe ser menor a 99 y mayor a 0. Ingrese otra vez: ");
+                                    bandeja = lea.nextInt();
+                                }
+
+                                System.out.print("Ingrese los pases: ");
+                                pases = lea.nextInt();
+                                while (pases >= 99 || pases < 0) {
+                                    System.out.print("Debe ser menor a 99 y mayor a 0. Ingrese otra vez: ");
+                                    pases = lea.nextInt();
+                                }
+
+                                System.out.print("Ingrese el posteo: ");
+                                posteo = lea.nextInt();
+                                while (posteo >= 99 || posteo < 0) {
+                                    System.out.print("Debe ser menor a 99 y mayor a 0. Ingrese otra vez: ");
+                                    posteo = lea.nextInt();
+                                }
+
+                                boolean flag = true;
+                                while (flag) {
+                                    flag=false;
+                                    System.out.println("Alturas:");
+                                    System.out.println("1) Base (193)");
+                                    System.out.println("2) Escolta (200)");
+                                    System.out.println("3) Alero (205)");
+                                    System.out.println("4) Alero -Pivot (210)");
+                                    System.out.println("5) Centro (213)");
+                                    System.out.print("Ingrese la opcion que desea: ");
+                                    int eleccion = lea.nextInt();
+
+                                    switch (eleccion) {
+                                        case 1:
+                                            altura = 193;
+                                            break;
+                                        case 2:
+                                            altura = 200;
+                                            break;
+                                        case 3:
+                                            altura = 205;
+                                            break;
+                                        case 4:
+                                            altura = 210;
+                                            break;
+                                        case 5:
+                                            altura = 213;
+                                            break;
+                                        default:
+                                            System.out.println("Opcion incorrecta");
+                                            flag = true;
+                                            break;
+                                    }
+                                }
+                                
+                                System.out.println("");
                                 break;
 
-                            case 2:
+                            case 2://CREAR DUEÑO
                                 System.out.print("Ingrese el valor neto del dueño: ");
                                 valorDueño = lea.nextInt();
 
                                 System.out.print("Ingrese la ciudad natal: ");
                                 ciudadNatal = lea.next();
 
+                                System.out.println("");
                                 break;
                             default:
                                 throw new AssertionError();
