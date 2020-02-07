@@ -1,5 +1,6 @@
 package lab3_jarodzuniga_paulinaeuceda;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Lab3_JarodZuniga_PaulinaEuceda {
@@ -9,6 +10,8 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
     public static void main(String[] args) {
         // TODO code application logic here
         char resp = 's';
+        ArrayList equipo=new ArrayList();
+
         while (resp == 's') {
             System.out.println("1) Crear equipo");
             System.out.println("2) Despedir jugador");
@@ -41,15 +44,12 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
 
                         System.out.print("Ingrese el salario del jugador: ");
                         salario = lea.nextInt();
-
                         System.out.println("");
                         System.out.println("Puestos a asignar a la persona : ");
-                        System.out.println("1) Crear jugador");
-                        System.out.println("2) Crear dueño");
-                        System.out.println("3) Crear entrenador principal");
-                        System.out.println("4) Crear asistente");
-                        System.out.println("5) Crear medico");
-                        System.out.println("6) Crear preparador fisico");
+                        System.out.println("1) Jugador");
+                        System.out.println("2) Dueño");
+                        System.out.println("3) Entrenador");
+                        System.out.println("4) Medico");
                         System.out.print("Ingrese la opcion que desea: ");
                         int op = lea.nextInt();
 
