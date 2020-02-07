@@ -6,11 +6,11 @@ package lab3_jarodzuniga_paulinaeuceda;
  */
 public class Terapeuta extends Medico{
     private int num_terapias;
-
+    private String tipoM="Terapeuta";
     public Terapeuta() {
     }
 
-    public Terapeuta(int num_terapias,String colegio, String nombre, String apellido, int añospro,int salario) {
+    public Terapeuta(int num_terapias,String tipoM,String colegio, String nombre, String apellido, int añospro,int salario) {
         super(nombre, nombre, apellido, añospro, salario);
         this.num_terapias = num_terapias;
     }

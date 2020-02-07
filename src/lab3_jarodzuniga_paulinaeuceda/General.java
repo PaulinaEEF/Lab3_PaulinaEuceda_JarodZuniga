@@ -11,8 +11,9 @@ package lab3_jarodzuniga_paulinaeuceda;
  */
 public class General extends Medico{
     private int num_enfermedades;
+    private String tipoM="General";
 
-    public General(int num_enfermedades,String colegio, String nombre, String apellido, int añospro,int salario) {
+    public General(int num_enfermedades,String tipoM,String colegio, String nombre, String apellido, int añospro,int salario) {
         super(nombre, nombre, apellido, añospro, salario);
         this.num_enfermedades = num_enfermedades;
         

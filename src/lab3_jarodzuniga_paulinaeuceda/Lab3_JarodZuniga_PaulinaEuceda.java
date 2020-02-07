@@ -228,21 +228,25 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                                 flag = true;
                                 while (flag == true) {
                                     flag = false;
+                                    String tp="";
                                     switch (opc) {
                                         case 1://general
                                             System.out.print("Ingrese el numero de enfermedades curadas");
                                             cantEnf = lea.nextInt();
-                                            equipo.add(new General(cantEnf, colegioMed, nombrePer, apellido, años, salario));
+                                            tp="Medico General";
+                                            equipo.add(new General(cantEnf, tp,colegioMed, nombrePer, apellido, años, salario));
                                             break;
                                         case 2://cirujano
                                             System.out.print("Ingrese el numero de cirugías: ");
                                             cantCiru = lea.nextInt();
-                                            equipo.add(new Cirujano(cantCiru, colegioMed, nombrePer, apellido, años, salario));
+                                            tp="Cirujano";
+                                            equipo.add(new Cirujano(cantCiru, tp,colegioMed, nombrePer, apellido, años, salario));
 
                                         case 3://terapeuta
                                             System.out.print("Ingrese el numero de terapias: ");
                                             cantTer = lea.nextInt();
-                                            equipo.add(new Terapeuta(cantTer, colegioMed, nombrePer, apellido, años, salario));
+                                            tp="Terapeuta";
+                                            equipo.add(new Terapeuta(cantTer, tp,colegioMed, nombrePer, apellido, años, salario));
 
                                         default:
                                             System.out.println("Opcion incorrecta");

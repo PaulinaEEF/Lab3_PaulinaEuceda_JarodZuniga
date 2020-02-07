@@ -11,8 +11,9 @@ package lab3_jarodzuniga_paulinaeuceda;
  */
 public class Cirujano extends Medico {
     private int cirujias;
+    private String tipoM="Cirujano";
 
-    public Cirujano(int cirujias,String colegio, String nombre, String apellido, int añospro,int salario) {
+    public Cirujano(int cirujias,String tipoM,String colegio, String nombre, String apellido, int añospro,int salario) {
         super(colegio, nombre, apellido, añospro, salario);
         this.cirujias = cirujias;
     }
