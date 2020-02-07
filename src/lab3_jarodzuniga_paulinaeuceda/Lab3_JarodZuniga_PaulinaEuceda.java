@@ -3,6 +3,7 @@ package lab3_jarodzuniga_paulinaeuceda;
 import java.util.Scanner;
 
 public class Lab3_JarodZuniga_PaulinaEuceda {
+
     static Scanner lea = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -29,6 +30,20 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                 case 1:
                     char salida = 's';
                     while (salida == 's') {
+                        System.out.print("Ingrese el nombre del jugador: ");
+                        nombrePer = lea.next();
+
+                        System.out.print("Ingrese apellido: ");
+                        apellido = lea.next();
+
+                        System.out.print("Ingrese años como profesional: ");
+                        años = lea.nextInt();
+
+                        System.out.print("Ingrese el salario del jugador: ");
+                        salario = lea.nextInt();
+
+                        System.out.println("");
+                        System.out.println("Puestos a asignar a la persona : ");
                         System.out.println("1) Crear jugador");
                         System.out.println("2) Crear dueño");
                         System.out.println("3) Crear entrenador principal");
@@ -41,28 +56,14 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                         System.out.println("");
                         switch (op) {
                             case 1:
-                                System.out.print("Ingrese el nombre del jugador: ");
-                                nombrePer = lea.next();
-
-                                System.out.print("Ingrese apellido: ");
-                                apellido = lea.next();
-
-                                System.out.print("Ingrese años como profesional: ");
-                                años = lea.nextInt();
-
-                                System.out.print("Ingrese el salario del jugador: ");
-                                salario = lea.nextInt();
-
-                                System.out.println("");
                                 break;
 
                             case 2:
                                 System.out.print("Ingrese el valor neto del dueño: ");
                                 valorDueño = lea.nextInt();
-                                
+
                                 System.out.print("Ingrese la ciudad natal: ");
                                 ciudadNatal = lea.next();
-                                
 
                                 break;
                             default:
