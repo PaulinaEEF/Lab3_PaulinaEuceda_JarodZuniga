@@ -58,7 +58,11 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
 
                             case 2:
                                 System.out.print("Ingrese el valor neto del dueño: ");
-                                System.out.println("hola");
+                                valorDueño = lea.nextInt();
+                                
+                                System.out.print("Ingrese la ciudad natal: ");
+                                ciudadNatal = lea.next();
+                                
 
                                 break;
                             default:
