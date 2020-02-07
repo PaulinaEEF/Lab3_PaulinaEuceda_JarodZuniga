@@ -58,6 +58,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
 
                             case 2:
                                 System.out.print("Ingrese el valor neto del dueño: ");
+                                System.out.println("hola");
 
                                 break;
                             default:
