@@ -9,14 +9,15 @@ package lab3_jarodzuniga_paulinaeuceda;
  *
  * @author Rosa
  */
-public class Entrenador {
-    private boolean fue_jugador;
-    private String jugada_fav;
+public class Entrenador extends Persona {
+    protected boolean fue_jugador;
+    protected String jugada_fav;
 
     public Entrenador() {
     }
 
-    public Entrenador(boolean fue_jugador) {
+    public Entrenador(boolean fue_jugador,String nombre, String apellido, int añospro,int salario) {
+        super(nombre, apellido, añospro, salario);
         this.fue_jugador = fue_jugador;
     }
 

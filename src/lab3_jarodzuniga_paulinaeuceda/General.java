@@ -9,11 +9,13 @@ package lab3_jarodzuniga_paulinaeuceda;
  *
  * @author Rosa
  */
-public class General {
+public class General extends Medico{
     private int num_enfermedades;
 
-    public General(int num_enfermedades) {
+    public General(int num_enfermedades,String colegio, String nombre, String apellido, int añospro,int salario) {
+        super(nombre, nombre, apellido, añospro, salario);
         this.num_enfermedades = num_enfermedades;
+        
     }
 
     public General() {

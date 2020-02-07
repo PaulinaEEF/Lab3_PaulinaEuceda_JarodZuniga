@@ -9,10 +9,11 @@ package lab3_jarodzuniga_paulinaeuceda;
  *
  * @author Rosa
  */
-public class Cirujano {
+public class Cirujano extends Medico {
     private int cirujias;
 
-    public Cirujano(int cirujias) {
+    public Cirujano(int cirujias,String colegio, String nombre, String apellido, int añospro,int salario) {
+        super(colegio, nombre, apellido, añospro, salario);
         this.cirujias = cirujias;
     }
 

@@ -9,13 +9,18 @@ package lab3_jarodzuniga_paulinaeuceda;
  *
  * @author Rosa
  */
-public class Asistente {
+public class Asistente extends Entrenador {
     private int salario=1000000;
 
     public Asistente() {
     }
-
-    public double getSalario() {
+    public Asistente(int salario,boolean fue_jugador,String nombre, String apellido, int añospro) {
+        super(fue_jugador, nombre, apellido, añospro, salario);
+        this.salario=salario;
+    }
+    
+    public int getSalario() {
+        
         return salario;
     }
 

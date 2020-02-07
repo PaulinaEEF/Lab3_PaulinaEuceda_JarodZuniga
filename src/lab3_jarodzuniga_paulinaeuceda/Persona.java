@@ -10,10 +10,10 @@ package lab3_jarodzuniga_paulinaeuceda;
  * @author Rosa
  */
 public class Persona {
-    private String nombre;
-    private String apellido;
-    private int añospro;
-    private int salario;
+    protected String nombre;
+    protected String apellido;
+    protected int añospro;
+    protected int salario;
 
     public Persona() {
     }

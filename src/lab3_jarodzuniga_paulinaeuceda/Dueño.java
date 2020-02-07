@@ -9,14 +9,15 @@ package lab3_jarodzuniga_paulinaeuceda;
  *
  * @author Rosa
  */
-public class Dueño {
+public class Dueño extends Persona{
     private int ganancia;
     private String ciudad_natal;
 
     public Dueño() {
     }
 
-    public Dueño(int ganancia) {
+    public Dueño(int ganancia,String nombre, String apellido, int añospro,int salario) {
+        super(nombre, apellido, añospro, salario);
         this.ganancia = ganancia;
     }
 

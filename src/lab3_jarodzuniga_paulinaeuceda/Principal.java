@@ -9,13 +9,14 @@ package lab3_jarodzuniga_paulinaeuceda;
  *
  * @author Rosa
  */
-public class Principal {
+public class Principal extends Entrenador {
     private int salario;
 
     public Principal() {
     }
 
-    public Principal(int salario) {
+    public Principal(int salario,boolean fue_jugador,String nombre, String apellido, int añospro) {
+        super(fue_jugador, nombre, apellido, añospro, salario);
         this.salario = salario;
     }
 

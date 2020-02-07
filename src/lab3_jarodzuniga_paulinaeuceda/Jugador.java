@@ -9,7 +9,7 @@ package lab3_jarodzuniga_paulinaeuceda;
  *
  * @author Rosa
  */
-public class Jugador {
+public class Jugador extends Persona{
     private int numero_camisa;
     private int tiro3;
     private int defensa;
@@ -23,7 +23,8 @@ public class Jugador {
     public Jugador() {
     }
 
-    public Jugador(int numero_camisa, int tiro3, int defensa, int tiromed, int rebote, int bandeja, int pases, int posteo, int altura) {
+    public Jugador(int numero_camisa, int tiro3, int defensa, int tiromed, int rebote, int bandeja, int pases, int posteo, int altura,String nombre, String apellido,int  añospro, int salario) {
+        super(nombre, apellido, añospro, altura);
         this.numero_camisa = numero_camisa;
         this.tiro3 = tiro3;
         this.defensa = defensa;

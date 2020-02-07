@@ -9,13 +9,14 @@ package lab3_jarodzuniga_paulinaeuceda;
  *
  * @author Rosa
  */
-public class Preparador {
+public class Preparador extends Entrenador {
     private int salario;
 
     public Preparador() {
     }
 
-    public Preparador(int salario) {
+    public Preparador(int salario,boolean fue_jugador,String nombre, String apellido, int añospro) {
+        super(fue_jugador, nombre, apellido, añospro, salario);
         this.salario = salario;
     }
 
