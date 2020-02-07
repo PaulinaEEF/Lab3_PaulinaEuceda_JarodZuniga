@@ -16,9 +16,10 @@ public class Dueño extends Persona{
     public Dueño() {
     }
 
-    public Dueño(int ganancia,String nombre, String apellido, int añospro,int salario) {
+    public Dueño(int ganancia,String ciudad_natal,String nombre, String apellido, int añospro,int salario) {
         super(nombre, apellido, añospro, salario);
         this.ganancia = ganancia;
+        this.ciudad_natal = ciudad_natal;
     }
 
     public String getCiudad_natal() {

@@ -22,7 +22,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
             String nombrePer, apellido, colegioMed, ciudadNatal, jugadaFav;
             int años, salario, numcamiseta, tiro3, defensa, tiroMedia, rebote, bandeja, pases, posteo, altura=0;
             int cantCiru, cantEnf, cantTer, valorDueño;
-            boolean Fue;
+            boolean Fue=false;
 
             String nomEq, descripcion;
             int año, catCampeo, porcentaje;
@@ -156,6 +156,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                                 ciudadNatal = lea.next();
 
                                 System.out.println("");
+                                equipo.add(new Dueño(valorDueño, ciudadNatal, nombrePer, apellido, años, salario));
                                 break;
                             case 3://crear entrenador
                                 flag=true;
@@ -181,7 +182,9 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                                 jugadaFav = lea.next();
 
                                 flag = true;
+                                
                                 while (flag == true) {
+                                    String tipoE;
                                     flag = false;
                                     System.out.println("1) Entrenador principal");
                                     System.out.println("2) Asistente de entrenador");
@@ -189,13 +192,17 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                                     int e = lea.nextInt();
                                     switch (e) {
                                         case 1:
-
+                                            tipoE="Entrenador Principal";
+                                            
+                                            equipo.add(new Principal(salario, Fue, tipoE, nombrePer, apellido, años));
                                             break;
                                         case 2:
-
+                                            tipoE="Asistente de entrenador";
+                                            equipo.add(new Principal(salario, Fue, tipoE, nombrePer, apellido, años));
                                             break;
                                         case 3:
-
+                                            tipoE="Preparador fisico";
+                                            equipo.add(new Principal(salario, Fue, tipoE, nombrePer, apellido, años));
                                             break;
                                         default:
                                             System.out.println("Opcion no valida.");
@@ -205,6 +212,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                                     break;
 
                                 }
+                                
                                 break;
                             case 4://crear medico
                                 System.out.print("Ingrese el colegio donde estudió el medico: ");
@@ -220,19 +228,21 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                                 flag = true;
                                 while (flag == true) {
                                     flag = false;
-                                    switch (op) {
+                                    switch (opc) {
                                         case 1://general
                                             System.out.print("Ingrese el numero de enfermedades curadas");
                                             cantEnf = lea.nextInt();
-
+                                            equipo.add(new General(cantEnf, colegioMed, nombrePer, apellido, años, salario));
                                             break;
                                         case 2://cirujano
                                             System.out.print("Ingrese el numero de cirugías: ");
                                             cantCiru = lea.nextInt();
+                                            equipo.add(new Cirujano(cantCiru, colegioMed, nombrePer, apellido, años, salario));
 
                                         case 3://terapeuta
                                             System.out.print("Ingrese el numero de terapias: ");
                                             cantTer = lea.nextInt();
+                                            equipo.add(new Terapeuta(cantTer, colegioMed, nombrePer, apellido, años, salario));
 
                                         default:
                                             System.out.println("Opcion incorrecta");
