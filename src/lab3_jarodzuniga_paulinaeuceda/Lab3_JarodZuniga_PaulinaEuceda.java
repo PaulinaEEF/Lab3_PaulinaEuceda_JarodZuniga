@@ -155,6 +155,55 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
 
                                 System.out.println("");
                                 break;
+                            case 3://crear entrenador
+                                flag=true;
+                                while (flag == true) {
+                                    flag=false;  
+                                    System.out.println("1) Entrenador fue jugador");
+                                    System.out.println("2) Entrenador no fue jugador");
+                                    int o = lea.nextInt();
+                                    switch (o) {
+                                        case 1:
+                                            Fue = true;
+                                            break;
+                                        case 2:
+                                            Fue = false;
+                                        default:
+                                            System.out.println("Opcion incorrecta");
+                                            flag = true;
+                                            break;
+                                    }
+                                }
+                                
+                                System.out.print("Ingrese la jugada favorita: ");
+                                jugadaFav = lea.next();
+
+                                flag = true;
+                                while (flag == true) {
+                                    flag = false;
+                                    System.out.println("1) Entrenador principal");
+                                    System.out.println("2) Asistente de entrenador");
+                                    System.out.println("3) Preparador fisico");
+                                    int e = lea.nextInt();
+                                    switch (e) {
+                                        case 1:
+
+                                            break;
+                                        case 2:
+
+                                            break;
+                                        case 3:
+
+                                            break;
+                                        default:
+                                            System.out.println("Opcion no valida.");
+                                            flag = true;
+                                            break;
+                                    }
+                                    break;
+
+                                }
+                                break;
                             default:
                                 throw new AssertionError();
                         }
