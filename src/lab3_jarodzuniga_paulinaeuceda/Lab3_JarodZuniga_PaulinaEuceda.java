@@ -206,6 +206,43 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
 
                                 }
                                 break;
+                            case 4://crear medico
+                                System.out.print("Ingrese el colegio donde estudió el medico: ");
+                                colegioMed = lea.next();
+
+                                System.out.println("Tipos de medicos");
+                                System.out.println("1) Medico general");
+                                System.out.println("2) Cirujano");
+                                System.out.println("3) Terapeuta");
+                                System.out.print("Ingrese la opcion que desea: ");
+                                int opc = lea.nextInt();
+
+                                flag = true;
+                                while (flag == true) {
+                                    flag = false;
+                                    switch (op) {
+                                        case 1://general
+                                            System.out.print("Ingrese el numero de enfermedades curadas");
+                                            cantEnf = lea.nextInt();
+
+                                            break;
+                                        case 2://cirujano
+                                            System.out.print("Ingrese el numero de cirugías: ");
+                                            cantCiru = lea.nextInt();
+
+                                        case 3://terapeuta
+                                            System.out.print("Ingrese el numero de terapias: ");
+                                            cantTer = lea.nextInt();
+
+                                        default:
+                                            System.out.println("Opcion incorrecta");
+                                            flag = true;
+                                            break;
+
+                                    }
+                                    
+                                }
+                                break;
                             default:
                                 throw new AssertionError();
                         }
