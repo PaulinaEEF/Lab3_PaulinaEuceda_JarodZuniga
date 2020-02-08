@@ -58,7 +58,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                          }else if (conep<1) {
                              System.out.println("Falta ingresar un entrenador pricipal");   
                          }else if (conea<1) {
-                             System.out.println("Falta un entrenador asistente");
+                             System.out.println("Falta un entrenador  asistente");
                          }
                          
                     System.out.print("Ingrese el nombre del jugador: ");
