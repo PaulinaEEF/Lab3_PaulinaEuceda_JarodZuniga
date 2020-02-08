@@ -11,13 +11,13 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
         // TODO code application logic here
         char resp = 's';
         ArrayList<Persona> equipo=new ArrayList();
+        ArrayList<Persona> agenteLibre = new ArrayList();
 
         while (resp == 's') {
             System.out.println("1) Crear equipo");
-            System.out.println("2) Despedir jugador");
-            System.out.println("3) Despedir medico");
-            System.out.println("4) Despedir entrenador");
-            System.out.println("5) Eliminar personal");
+            System.out.println("2) Despedir");
+            System.out.println("3) Eliminar personal");
+            System.out.println("4) Salida");
             System.out.print("Eliga la opcion que desea: ");
 
             String nombrePer, apellido, colegioMed, ciudadNatal, jugadaFav;
@@ -267,7 +267,20 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
 
                     
                     break;
-                case 5:
+                case 2:
+                    //imprimir arraylist de equipos
+                    System.out.print("Ingrese el indice de equipo que desea despedir: ");
+                    int despequipo = lea.nextInt();
+                    
+                    //imprimir arraylist de personal
+                    System.out.print("Indice de quien desea despedir: ");
+                    int despemleado = lea.nextInt();
+                    
+                    //agenteLibre.add(/*el get del personal*/);
+                    
+                    
+                    break;
+                case 3:
                                 System.out.println("Eliminar personal");
                                 for (int i = 0; i < equipo.size(); i++) {
                                     System.out.println(equipo.get(i));
@@ -276,7 +289,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                                 int el=lea.nextInt();
                                 equipo.remove(el-1);
                                 break;
-                case 6:
+                case 4:
                     resp='n';
                     break;
                 default:
