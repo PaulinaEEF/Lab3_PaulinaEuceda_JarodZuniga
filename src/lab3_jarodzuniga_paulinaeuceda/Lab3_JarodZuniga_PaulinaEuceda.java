@@ -17,6 +17,7 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
             System.out.println("2) Despedir jugador");
             System.out.println("3) Despedir medico");
             System.out.println("4) Despedir entrenador");
+            System.out.println("5) Eliminar personal");
             System.out.print("Eliga la opcion que desea: ");
 
             String nombrePer, apellido, colegioMed, ciudadNatal, jugadaFav;
@@ -32,7 +33,9 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
             switch (opcion) {
                 case 1:
                     char salida = 's';
-                    while (salida == 's') {
+                    int conj=0, cond=0,conm=0,cone=0;
+     
+                        
                         System.out.print("Ingrese el nombre del jugador: ");
                         nombrePer = lea.next();
 
@@ -257,11 +260,24 @@ public class Lab3_JarodZuniga_PaulinaEuceda {
                                     
                                 }
                                 break;
+                            
                             default:
                                 throw new AssertionError();
                         }
 
-                    }
+                    
+                    break;
+                case 5:
+                                System.out.println("Eliminar personal");
+                                for (int i = 0; i < equipo.size(); i++) {
+                                    System.out.println(equipo.get(i));
+                                }
+                                System.out.println("Ingrese la posicion que desea eliminar");
+                                int el=lea.nextInt();
+                                equipo.remove(el-1);
+                                break;
+                case 6:
+                    resp='n';
                     break;
                 default:
 
